@@ -4,6 +4,8 @@
   "description": "Test task, school model using NodeJs(express), MongoDb",
   "main": "app.js",
   "scripts": {
+    "start" : "node ./src/app.js",
+    "dev" : "nodemon ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrew Tolochkevych",
