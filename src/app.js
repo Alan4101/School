@@ -1,9 +1,10 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const config = require('./config');
+
 require('./db/index');
 
 const app = express();
-
-const config = require('./config');
 
 app.use(express.static(__dirname + '/public'));
 // app.get('/', (req, res) => res.render('index'));

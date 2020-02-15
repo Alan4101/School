@@ -3,7 +3,10 @@ const Schema = mongoose.Schema;
 
 const ClassRoomSchema = new Schema({
     name: String,
-    classRoomNumber: Number
+    classRoomNumber: {
+        type: Number,
+        unique: true
+    }
 },{
     versionKey: false
 });

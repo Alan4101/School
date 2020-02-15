@@ -1,6 +1,6 @@
 const Subject = require('../helpers/subject');
 
-exports.create = (req, res, next) => {
+exports.create = (req, res) => {
 
   const body = new Subject(req.body);
 

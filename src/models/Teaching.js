@@ -5,7 +5,11 @@ const TeachingSchema = new Schema({
     teacher: String,
     class_room: String,
     subjectNumber: Number,
-    classRoomNumber: Number
+    classRoomNumber: {
+        type: Number,
+        min: 1,
+        max: 20
+    }
 },{
     versionKey: false
 });
